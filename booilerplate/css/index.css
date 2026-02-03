@@ -1,15 +1,40 @@
+.navBars {
+  position: sticky;
+  top: 0;
+  color: black;
+  background-color: beige;
+  border: 6px solid green;
+  text-align: center;
+  display: flex;
+}
+
+.navBar {
+  position: sticky;
+  flex: 1;
+}
+
 body {
   color: white;
   background-color: black;
 }
 
 h1 {
+  text-align: center;
   font-style: italic;
-  color: red;
+  color: pink;
 }
 
 h2 {
+  text-align: center;
   color: pink;
+}
+
+.Experiences {
+  display: flex;
+}
+
+.expName {
+  flex: 1;
 }
 
 #about {
@@ -19,28 +44,26 @@ h2 {
   font-weight: bold;
 }
 
-#work-experience li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-
 #skills {
   padding: 2rem;
   text-align: right;
 }
 
-#connect,
-a {
-  color: white;
+.LinkedIn {
+  display: flex;
 }
 
 .btn {
-  display: inline-block;
   padding: 0.75rem 1.25rem;
   background-color: pink;
   color: black;
   text-decoration: none;
   border-radius: 6px;
+  margin: 0 auto;
+}
+
+img {
+  margin: 0 auto;
+  padding: 0 25px;
+  display: flex;
 }
