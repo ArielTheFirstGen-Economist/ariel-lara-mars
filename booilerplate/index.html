@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="css/index.css" />
 
     <nav class="navBars">
-      <a class="navBar">About</a>
-      <a class="navBar">Work Experience</a>
-      <a class="navBar">Skills</a>
-      <a class="navBar">Connect</a>
+      <a class="navBar" href="#about">About</a>
+      <a class="navBar" href="#work-experience">Experience</a>
+      <a class="navBar" href="#skills">Skills</a>
+      <a class="navBar" href="#Projects">Projects</a>
+      <a class="navBar" href="#connect">Connect</a>
     </nav>
   </head>
 
   <body>
-    <h1>Ariel Lara help</h1>
+    <h1>Ariel Lara</h1>
     <section id="Professional headshot">
       <img
         src="Andre.jpg"
@@ -26,51 +27,57 @@
     </section>
     <section id="about">
       <h2>About</h2>
-      <p>
+      <div class="aboutMeSummary">
         Ariel is a first-generation professional who earned his Economics degree
         from the University of California, Riverside. He has experience in
         customer service as a McDonald's manager and has worked as an accounting
         associate. Additionally, he has expertise in creating and consulting on
         databases. Ariel is focused on advancing his career and finding the
         intersection of technology and finance.
-      </p>
+      </div>
     </section>
     <section id="work-experience">
       <h2>Work Experience</h2>
-
       <div class="Experiences">
-        <div class="expName">HUB International: Accounting Associate</div>
-        <div class="expDate">Dates worked</div>
+        <div class="exp expComp">HUB International</div>
+        <div class="exp expDate">Dates worked</div>
       </div>
-      <p class="expDesc">desc</p>
+      <div class="exp expRole">Accounting Associate</div>
+      <p class="exp expDesc">desc</p>
 
       <div class="Experiences">
-        <div class="expName">
-          Building Wealth Initiative - Inland Empire : Treasure
+        <div class="exp expComp">
+          Building Wealth Initiative - Inland Empire
         </div>
-        <div class="expDate">Dates worked</div>
+        <div class="exp expDate">Dates worked</div>
       </div>
-      <p class="expDesc">desc</p>
+      <div class="exp expRole">Treasure</div>
+      <p class="exp expDesc">desc</p>
 
       <div class="Experiences">
-        <div class="expName">
-          The Autistic People of Color Fund: Database Developer and Consultant
-        </div>
-        <div class="expDate">Dates worked</div>
+        <div class="exp expComp">The Autistic People of Color Fund</div>
+        <div class="exp expDate">Dates worked</div>
       </div>
-      <p class="expDesc">desc</p>
+      <div class="exp expRole">Database Developer and Consultant</div>
+      <p class="exp expDesc">desc</p>
     </section>
     <section id="skills">
       <h2>Skills</h2>
 
-      <ol>
-        <li>STATA (programing language) [Advanced]</li>
-        <li>R Programming (Packages: dplyr, shinny,ggplot, tidyr)</li>
-        <li>
+      <ol class="skill">
+        <ul>
+          STATA (programing language) [Advanced]
+        </ul>
+        <ul>
+          R Programming (Packages: dplyr, shinny,ggplot, tidyr)
+        </ul>
+        <ul>
           Excel (Power, Query, Pivot Chart, Vlookup, Conditional statements,
           Brownian Motion) [Advanced]
-        </li>
-        <li>Bilingual ( English / Spanish ) [Advanced]</li>
+        </ul>
+        <ul>
+          Bilingual ( English / Spanish ) [Advanced]
+        </ul>
       </ol>
     </section>
     <section id="Projects">

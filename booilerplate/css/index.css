@@ -1,21 +1,14 @@
-.navBars {
-  position: sticky;
-  top: 0;
-  color: black;
-  background-color: beige;
-  border: 6px solid green;
-  text-align: center;
-  display: flex;
-}
-
-.navBar {
-  position: sticky;
-  flex: 1;
-}
+/* Moblie first design */
 
 body {
   color: white;
   background-color: black;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  padding: 0.1em;
 }
 
 h1 {
@@ -29,25 +22,51 @@ h2 {
   color: pink;
 }
 
+.navBars {
+  position: sticky;
+  top: 0;
+  background-color: lightblue;
+  border: 6px solid pink;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar {
+  flex: 1;
+}
+
+/* About me */
+
+.aboutMeSummary {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 4em;
+}
+
+/* Experinces section */
+
 .Experiences {
   display: flex;
 }
 
-.expName {
+.exp {
+  margin: 0 auto;
+  padding: 0.2em;
+}
+
+.expComp {
   flex: 1;
+  padding-bottom: 0.05em;
 }
 
-#about {
-  margin-bottom: 1rem;
-  padding: 2rem;
-  text-align: left;
-  font-weight: bold;
+.expDesc {
+  padding: 1em;
 }
 
-#skills {
-  padding: 2rem;
-  text-align: right;
-}
+/* Skills section */
+
+/* Contact section */
 
 .LinkedIn {
   display: flex;
@@ -62,8 +81,60 @@ h2 {
   margin: 0 auto;
 }
 
-img {
-  margin: 0 auto;
-  padding: 0 25px;
-  display: flex;
+/* ipad layout */
+@media (min-width: 60em) {
+  img {
+    margin: 0 auto;
+  }
+
+  .aboutMeSummary {
+    width: 50%;
+  }
+
+  .Experiences {
+    width: 70rem;
+  }
+  .exp {
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .expComp {
+    padding-top: 1rem;
+  }
+
+  .expRole {
+    padding-bottom: 1rem;
+  }
+
+  .skill {
+    text-align: justify;
+    margin: 0 auto;
+    padding: 0 20em;
+    width: 30em;
+  }
+}
+
+/* desktop layout */
+
+@media (min-width: 85em) {
+  body {
+    background-color: pink;
+    color: black;
+  }
+  h2 {
+    color: lightblue;
+    background-color: beige;
+  }
+  .aboutMeSummary {
+    width: 30%;
+  }
+  .exp {
+    margin: 0 auto;
+    padding: 0 3rem;
+  }
+  .btn {
+    background-color: black;
+    color: white;
+  }
 }
