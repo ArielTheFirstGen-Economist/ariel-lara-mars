@@ -14,7 +14,7 @@ img {
 h1 {
   text-align: center;
   font-style: italic;
-  color: pink;
+  color: white;
 }
 
 h2 {
@@ -39,9 +39,9 @@ h2 {
 /* About me */
 
 .aboutMeSummary {
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
-  padding: 0 4em;
+  width: 90%;
 }
 
 /* Experinces section */
@@ -52,12 +52,17 @@ h2 {
 
 .exp {
   margin: 0 auto;
-  padding: 0.2em;
+  padding: 0 0.5em;
 }
 
 .expComp {
   flex: 1;
   padding-bottom: 0.05em;
+  font-weight: bold;
+}
+
+.expRole {
+  font-style: italic;
 }
 
 .expDesc {
@@ -65,6 +70,16 @@ h2 {
 }
 
 /* Skills section */
+
+.flex-list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 0 auto;
+  border: 2px solid pink;  
+  padding: 3rem 1.5em;
+
+}
 
 /* Contact section */
 
@@ -81,8 +96,8 @@ h2 {
   margin: 0 auto;
 }
 
-/* ipad layout */
-@media (min-width: 60em) {
+/* ipad layout 
+@media (min-width: 5em) {
   img {
     margin: 0 auto;
   }
@@ -108,14 +123,13 @@ h2 {
   }
 
   .skill {
-    text-align: justify;
+    text-align: left;
     margin: 0 auto;
-    padding: 0 20em;
-    width: 30em;
-  }
+     padding: 0 20em; 
+    width: 30em; } 
 }
 
-/* desktop layout */
+ desktop layout 
 
 @media (min-width: 85em) {
   body {
