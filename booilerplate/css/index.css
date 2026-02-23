@@ -152,3 +152,51 @@ h2 {
     color: white;
   }
 }
+
+
+/* Handling Message Form */
+
+#newMessage {
+   text-align: center;
+   background-color: palevioletred;
+   
+}
+
+/*  #usersNames {
+  display: block;
+  
+} */
+ 
+label, input {
+  text-align: center;
+ display: block;
+ margin: 20px auto; 
+}
+
+ #usersMessage, 
+ input[type="submit"] {
+  display: block;
+}
+
+button {
+  font-size: 20px;
+  font-weight: 400;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  transform-origin: center bottom;
+  transition: all .1s ease-in;
+  
+}
+
+button:hover {
+  transform: scaley(1.05);
+}
+
+button:active {
+  font-weight: 600;
+  transform: scalex(1.1) scaley(.98);
+}
