@@ -12,6 +12,7 @@
       <a class="navBar" href="#skills">Skills</a>
       <a class="navBar" href="#Projects">Projects</a>
       <a class="navBar" href="#connect">Connect</a>
+      <a class="navBar" href="#leave_message">Contact</a>
     </nav>
   </head>
 
@@ -96,20 +97,36 @@
 
     <section id="connect">
       <h2>Connect</h2>
-      <p class="LinkedIn">
-        <a
-          class="btn"
-          href="https://www.linkedin.com/in/andre-lara-sanchez"
-          target="_blank"
-        >
-          LinkedIn</a
-        >
-      </p>
-
-    <footer class="copyright">
+        <p class="LinkedIn">
+          <a class="btn" 
+              href="https://www.linkedin.com/in/andre-lara-sanchez"
+                target="_blank">
+                  LinkedIn </a>
+        </p>
+    </section>
     
-    </footer>
+      <fieldset id="newMessage">
+        <h2>Contact me</h2>
+          <form action="https://httpbin.org/post" method="post" name="leave_message">
+            <label for="name">Name</label> 
+              <input type="text" id='usersNames' name='usersNames'  placeholder="First and Last Name">
+            <label for="email">Email</label>
+              <input type="email" id="usersEmail" name='usersEmail' >
+            <label for="textarea">Leave a message</label>
+              <textarea id="usersMessage" name="usersMessage" ></textarea>
+              <button type="submit">Submit</button>
+          <!-- </form> -->
+      </fieldset>
+      <section id="messages">
+        <h2>Message</h2>
+        <ul>
+          
+        </ul>
+
+      </section>
+    <footer class="copyright"></footer>
     <script src="js/index.js" defer ></script>    
+    <script src="js/test.js" defer></script>
   </body>
   
 </html>
