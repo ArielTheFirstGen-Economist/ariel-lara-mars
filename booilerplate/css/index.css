@@ -76,9 +76,19 @@ h2 {
   list-style: none;
   gap: 10px;
   margin: 0 auto;
-  border: 2px solid pink;  
+  border: 2px solid pink;
   padding: 3rem 1.5em;
+}
 
+/* Projects section */
+
+.pflex-list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 0 auto;
+  border: 2px solid pink;
+  padding: 3rem 1.5em;
 }
 
 /* Contact section */
@@ -157,24 +167,24 @@ h2 {
 /* Handling Message Form */
 
 #newMessage {
-   text-align: center;
-   background-color: palevioletred;
-   
+  text-align: center;
+  background-color: palevioletred;
 }
 
 /*  #usersNames {
   display: block;
   
 } */
- 
-label, input {
+
+label,
+input {
   text-align: center;
- display: block;
- margin: 20px auto; 
+  display: block;
+  margin: 20px auto;
 }
 
- #usersMessage, 
- input[type="submit"] {
+#usersMessage,
+input[type="submit"] {
   display: block;
 }
 
@@ -188,8 +198,7 @@ button {
   padding: 10px;
   cursor: pointer;
   transform-origin: center bottom;
-  transition: all .1s ease-in;
-  
+  transition: all 0.1s ease-in;
 }
 
 button:hover {
@@ -198,5 +207,5 @@ button:hover {
 
 button:active {
   font-weight: 600;
-  transform: scalex(1.1) scaley(.98);
+  transform: scalex(1.1) scaley(0.98);
 }
