@@ -84,11 +84,23 @@ h2 {
 
 .pflex-list {
   display: flex;
+  flex-wrap: wrap;
+
   list-style: none;
   gap: 10px;
   margin: 0 auto;
   border: 2px solid pink;
   padding: 3rem 1.5em;
+}
+
+.pflex-list li::before {
+  content: " Repo: ";
+  color: yellow;
+}
+
+.pflex-list li::after {
+  content: " | ";
+  color: red;
 }
 
 /* Contact section */
@@ -106,39 +118,7 @@ h2 {
   margin: 0 auto;
 }
 
-/* ipad layout 
-@media (min-width: 5em) {
-  img {
-    margin: 0 auto;
-  }
-
-  .aboutMeSummary {
-    width: 50%;
-  }
-
-  .Experiences {
-    width: 70rem;
-  }
-  .exp {
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-
-  .expComp {
-    padding-top: 1rem;
-  }
-
-  .expRole {
-    padding-bottom: 1rem;
-  }
-
-  .skill {
-    text-align: left;
-    margin: 0 auto;
-     padding: 0 20em; 
-    width: 30em; } 
-}
-
+/*
  desktop layout 
 
 @media (min-width: 85em) {
@@ -163,6 +143,7 @@ h2 {
   }
 }
 
+*/
 
 /* Handling Message Form */
 
@@ -208,4 +189,53 @@ button:hover {
 button:active {
   font-weight: 600;
   transform: scalex(1.1) scaley(0.98);
+}
+
+/* ipad layout  */
+
+@media (min-width: 30rem) {
+  body {
+    color: black;
+    background-color: white;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+
+  .pflex-list {
+    border: 2px solid pink;
+  }
+  .pflex-list li::before {
+    color: blueviolet;
+  }
+
+  .pflex-list li::after {
+    color: green;
+  }
+}
+
+/*  desktop layout  */
+
+@media (min-width: 40rem) {
+  body {
+    background-color: pink;
+    color: black;
+  }
+
+  .exp {
+    margin: 0 auto;
+    padding: 10px 3em;
+  }
+
+  .flex-list {
+    border: 2px solid black;
+    padding: 3rem 20em;
+  }
+
+  .pflex-list {
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 3rem 30em;
+  }
 }

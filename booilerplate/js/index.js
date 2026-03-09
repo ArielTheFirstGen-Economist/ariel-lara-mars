@@ -45,7 +45,7 @@ let skills = [
 
 const skillSection = document.querySelector("#skills");
 const skillsList = skillSection.querySelector("ul");
-skillsList.classList.add("pflex-list");
+skillsList.classList.add("flex-list");
 
 for (
   let i = 0;
