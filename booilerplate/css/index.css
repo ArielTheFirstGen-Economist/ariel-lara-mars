@@ -30,6 +30,7 @@ h2 {
   text-align: center;
   display: flex;
   justify-content: space-between;
+  font-size: small;
 }
 
 .navBar {
@@ -41,7 +42,8 @@ h2 {
 .aboutMeSummary {
   text-align: left;
   margin: 0 auto;
-  width: 90%;
+  padding: 10px;
+  /* width: 95%; */
 }
 
 /* Experinces section */
@@ -66,7 +68,9 @@ h2 {
 }
 
 .expDesc {
+  color: bisque;
   padding: 1em;
+  font-style: italic;
 }
 
 /* Skills section */
@@ -78,6 +82,8 @@ h2 {
   margin: 0 auto;
   border: 2px solid pink;
   padding: 3rem 1.5em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Projects section */
@@ -103,6 +109,14 @@ h2 {
   color: red;
 }
 
+/* Research */
+
+.crimeReg {
+  color: white;
+  margin: auto;
+  padding: 20%;
+}
+
 /* Contact section */
 
 .LinkedIn {
@@ -118,44 +132,15 @@ h2 {
   margin: 0 auto;
 }
 
-/*
- desktop layout 
-
-@media (min-width: 85em) {
-  body {
-    background-color: pink;
-    color: black;
-  }
-  h2 {
-    color: lightblue;
-    background-color: beige;
-  }
-  .aboutMeSummary {
-    width: 30%;
-  }
-  .exp {
-    margin: 0 auto;
-    padding: 0 3rem;
-  }
-  .btn {
-    background-color: black;
-    color: white;
-  }
-}
-
-*/
-
 /* Handling Message Form */
 
-#newMessage {
-  text-align: center;
-  background-color: palevioletred;
+#newMessage h2 {
+  color: white;
 }
 
-/*  #usersNames {
-  display: block;
-  
-} */
+#newMessage {
+  background-color: palevioletred;
+}
 
 label,
 input {
@@ -164,9 +149,9 @@ input {
   margin: 20px auto;
 }
 
-#usersMessage,
-input[type="submit"] {
+#usersMessage {
   display: block;
+  margin: 40px auto;
 }
 
 button {
@@ -191,12 +176,50 @@ button:active {
   transform: scalex(1.1) scaley(0.98);
 }
 
+label,
+button {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Footer section */
+
+.copyColor {
+  font-style: italic;
+  color: pink;
+}
+
+/* Banner section */
+
+.addBanner {
+  font-style: italic;
+  color: black;
+  background-color: lightblue;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
 /* ipad layout  */
 
 @media (min-width: 30rem) {
   body {
     color: black;
     background-color: white;
+  }
+
+  h1 {
+    color: pink;
+  }
+
+  h2 {
+    text-align: center;
+    color: green;
+  }
+
+  .expDesc {
+    color: palevioletred;
+    padding: 1em;
+    font-style: italic;
   }
 
   img {
@@ -213,6 +236,15 @@ button:active {
   .pflex-list li::after {
     color: green;
   }
+
+  .copyColor {
+    font-style: italic;
+    color: black;
+  }
+
+  .rvmBtn {
+    color: black;
+  }
 }
 
 /*  desktop layout  */
@@ -223,14 +255,22 @@ button:active {
     color: black;
   }
 
+  h1 {
+    color: blueviolet;
+  }
+
   .exp {
     margin: 0 auto;
     padding: 10px 3em;
   }
 
+  .expDesc {
+    color: brown;
+  }
+
   .flex-list {
     border: 2px solid black;
-    padding: 3rem 20em;
+    padding: 3rem 35em;
   }
 
   .pflex-list {
