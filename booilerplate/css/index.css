@@ -114,7 +114,7 @@ h2 {
 .crimeReg {
   color: white;
   margin: auto;
-  padding: 20%;
+  padding: 0 20%;
 }
 
 /* Contact section */
@@ -245,6 +245,12 @@ button {
   .rvmBtn {
     color: black;
   }
+
+  .crimeReg {
+    color: black;
+    margin: auto;
+    padding: 0 30%;
+  }
 }
 
 /*  desktop layout  */
@@ -277,5 +283,10 @@ button {
     margin: 0 auto;
     border: 2px solid black;
     padding: 3rem 30em;
+  }
+
+  .crimeReg {
+    margin: auto;
+    padding: 0 42%;
   }
 }
