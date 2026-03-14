@@ -12,7 +12,7 @@
       <a class="navBar" href="#skills">Skills</a>
       <a class="navBar" href="#Projects">Projects</a>
       <a class="navBar" href="#connect">Connect</a>
-      <a class="navBar" href="#leave_message">Contact</a>
+      <a class="navBar" href="#newMessage">Message Me</a>
     </nav>
   </head>
 
@@ -20,13 +20,13 @@
     <h1 class="nameHeader">Ariel Lara</h1>
     <section id="professional-headshot">
       <img
-        src="Andre.jpg"
+        src="photos/Andre.jpg"
         alt="Professional headshot"
         width="550"
         height="auto"
       />
     </section>
-    
+
     <section id="about">
       <h2>About</h2>
       <div class="aboutMeSummary">
@@ -38,7 +38,7 @@
         intersection of technology and finance.
       </div>
     </section>
-    
+
     <section id="work-experience">
       <h2>Work Experience</h2>
       <div class="Experiences">
@@ -46,35 +46,53 @@
         <div class="exp expDate">Mar 2024 - Present</div>
       </div>
       <div class="exp expRole">Financial Aid Specialist</div>
-      <p class="exp expDesc">desc</p>
+      <p class="exp expDesc">
+        In this role I supported college access programs by managing high-volume
+        financial aid documentation, verifying eligibility records, and
+        maintaining accurate financial data to ensure compliance with federal
+        aid regulations and program reporting requirements.
+      </p>
 
       <div class="Experiences">
-        <div class="exp expComp">
-          Building Wealth Initiative - I.E.
-        </div>
+        <div class="exp expComp">Building Wealth Initiative - I.E.</div>
         <div class="exp expDate">Mar 2024 - Present</div>
       </div>
       <div class="exp expRole">Treasure</div>
-      <p class="exp expDesc">desc</p>
+      <p class="exp expDesc">
+        In this role I provided financial oversight for nonprofit operations by
+        managing accounts payable and receivable processes, monitoring cash
+        flow, and maintaining accurate financial records to support
+        transparency, compliance, and board reporting.
+      </p>
 
       <div class="Experiences">
         <div class="exp expComp">The Autistic People of Color Fund</div>
         <div class="exp expDate">Dec 2024 - Present</div>
       </div>
       <div class="exp expRole">Database Developer and Consultant</div>
-      <p class="exp expDesc">desc</p>
+      <p class="exp expDesc">
+        In this role I developed and maintained an applicant database to
+        streamline data collection and validation processes, improving record
+        accuracy and supporting data-driven reporting for nonprofit program
+        operations.
+      </p>
 
-    <div class="Experiences">
-      <div class="exp expComp">HUB International</div>
-      <div class="exp expDate">Mar 2025 - Sep 2025</div>
-    </div>
-    <div class="exp expRole">Accounting Associate</div>
-    <p class="exp expDesc">desc</p>
+      <div class="Experiences">
+        <div class="exp expComp">HUB International</div>
+        <div class="exp expDate">Mar 2025 - Sep 2025</div>
+      </div>
+      <div class="exp expRole">Accounting Associate</div>
+      <p class="exp expDesc">
+        In this role I supported financial operations by reconciling high-volume
+        transactions, verifying invoices and payments, and maintaining accurate
+        financial documentation to ensure compliance, reporting reliability, and
+        audit readiness.
+      </p>
     </section>
-    
+
     <section id="skills">
       <h2>Skills</h2>
-        <ul></ul>
+      <ul></ul>
     </section>
 
     <section id="Projects">
@@ -83,52 +101,89 @@
     </section>
 
     <section id="Research">
-      <h2>Research</h2>   
+      <h2>Research</h2>
+      <a class="crimeReg" href="research.html">
+        Immigration on crime rate research
+      </a>
     </section>
 
     <section id="Certifications">
-          <h2>Certifications </h2>        
-     </section>
+      <h2>Certifications</h2>
+      <a class="Experiences">
+        <div class="exp expComp">
+          Goldman Sachs Excel Skills for Business Job Simulation on Forage
+        </div>
+        <div class="exp expDate">May 2024 - June 2024</div>
+      </a>
+      <!-- <p class="exp expDesc">
+        1) Acquired proficient command of Excel functionalities and data
+        analysis techniques, including data cleansing, and manipulation, and
+        conditional formatting techniques.
+      </p>
 
-    
+      <p class="exp expDesc">
+        2) Acquired proficiency in automation by learning to record macros and
+        script in Visual Basic for Applications (VBA), developing two functional
+        macros integrated with buttons using account sales data.
+      </p>
+
+      <p class="exp expDesc">
+        3) Gained expertise in data visualization and storytelling using Excel
+        and PowerPoint by creating impactful charts and interactive dashboards.
+      </p> -->
+    </section>
+
     <section id="Professional-Affiliations">
-      <h2>Professional Affiliations </h2>
+      <h2>Professional Affiliations</h2>
     </section>
 
     <section id="connect">
       <h2>Connect</h2>
-        <p class="LinkedIn">
-          <a class="btn" 
-              href="https://www.linkedin.com/in/andre-lara-sanchez"
-                target="_blank">
-                  LinkedIn </a>
-        </p>
+      <p class="LinkedIn">
+        <a
+          class="btn"
+          href="https://www.linkedin.com/in/andre-lara-sanchez"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </p>
     </section>
-    
-      <fieldset id="newMessage">
-        <h2>Contact me</h2>
-          <form action="https://httpbin.org/post" method="post" name="leave_message">
-            <label for="name">Name</label> 
-              <input type="text" id='usersNames' name='usersNames'  placeholder="John Doe">
-            <label for="email">Email</label>
-              <input type="email" id="usersEmail" name='usersEmail' >
-            <label for="textarea">Leave a message</label>
-              <textarea id="usersMessage" name="usersMessage" ></textarea>
-              <button type="submit">Submit</button>
-          <!-- </form> -->
-      </fieldset>
-      <section id="messages">
-        <h2>Message</h2>
-        <ul>
-          
-        </ul>
 
-      </section>
+    <fieldset id="newMessage">
+      <h2>Contact me</h2>
+      <form
+        action="https://httpbin.org/post"
+        method="post"
+        name="leave_message"
+      >
+        <label for="usersNames">Name</label>
+        <input
+          type="text"
+          id="usersNames"
+          name="usersNames"
+          placeholder="John Doe"
+        />
+
+        <label for="usersEmail">Email</label>
+        <input
+          type="email"
+          id="usersEmail"
+          name="usersEmail"
+          placeholder="JohnDoe@gmail.com"
+        />
+
+        <label for="usersMessage">Leave a message</label>
+        <textarea id="usersMessage" name="usersMessage"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </fieldset>
+    <section id="messages">
+      <h2>Message from user:</h2>
+      <ul></ul>
+    </section>
     <footer class="copyright"></footer>
-    
-    <script src="js/index.js" defer ></script>    
-    <script src="js/test.js" defer></script>
-    
+
+    <script src="js/index.js" defer></script>
   </body>
-  
 </html>
